@@ -99,3 +99,15 @@ module "composer_env" {
   location      = var.location
   image_version = "composer-3-airflow-2"
 }
+
+# Looker instance for data visualization
+# module "looker" {
+#   source              = "./modules/looker"
+#   name                = "looker-instance"
+#   platform_edition    = "LOOKER_CORE_STANDARD_ANNUAL"
+#   location            = var.location
+#   public_ip_enabled   = true
+#   deletion_policy     = "DELETION_POLICY_UNSPECIFIED"
+#   oauth_client_id     = "madmax"
+#   oauth_client_secret = "Mohitdixit12345!"
+# }

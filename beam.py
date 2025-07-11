@@ -1,7 +1,7 @@
 #project-id:dataset_id.table_id
-delivered_table_spec = 'orbital-bee-455915-h5:dataset_food_orders.delivered_orders'
+delivered_table_spec = 'encoded-alpha-457108-e8:dataset_food_orders.delivered_orders'
 #project-id:dataset_id.table_id
-other_table_spec = 'orbital-bee-455915-h5:dataset_food_orders.other_status_orders'
+other_table_spec = 'encoded-alpha-457108-e8:dataset_food_orders.other_status_orders'
 
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions, StandardOptions
@@ -94,7 +94,7 @@ other_orders = (
 #BigQuery 
 client = bigquery.Client()
 
-dataset_id = "orbital-bee-455915-h5.dataset_food_orders"
+dataset_id = "encoded-alpha-457108-e8.dataset_food_orders"
 
 try:
 	client.get_dataset(dataset_id)
